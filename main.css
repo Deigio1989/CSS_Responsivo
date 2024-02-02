@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    padding:16px;
+}
+header{
+    background-color: rgb(252, 54, 113);  
+    color: azure;
+}
+
+h1, h2{
+    font-family: "Creepster", system-ui;
+    font-weight: 200;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 8px;
+    border-radius: 15%;
+    font-weight: 400;
+    
+}
+li a:hover{
+    text-decoration:underline;
+    background-color: rgba(230, 230, 240,0.2);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about{
+    display:flex;
+    align-items:flex-start;    
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+.about img{
+    max-width: 340px;
+    width: 100%;
+}
+.sobre-nos{
+    margin-left: 16px;
+}
+
+.products img{
+    max-width: 200px;
+
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    column-gap: 1%;
+    margin-bottom: 16px;
+}
+.produtoes {
+    color: aliceblue;
+    padding: 8px;
+    background-color:  rgb(44, 36, 38);
+}
+.produtoes h2{
+    padding-left: 8px;
+}
+article button{
+    border: none;
+    background-color: rgb(252, 54, 113);  
+    color: azure;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5%;
+}
+article button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+article p, article h3, article img{
+    margin-bottom: 8px;
+    max-width: 100%;
+    width: 100%;
+}
+article h3{
+    font-size: 25px;
+}
+.conteudo:hover{
+    opacity: 0.7;
+}
+@media screen and (max-width:640px) {
+    .about{
+        display:block;
+    max-width: 100%;}
+    .about img{
+        margin-bottom: 8px;
+    }
+    .products{
+        display: block;
+    }
+    .products img{
+        max-width: 100%;}
+    .products button{
+        margin-bottom: 8px;
+    }
+    
+}
+@media screen and (min-width:641px) and (max-width:1023px){
+    .about{
+        display:block;
+        max-width: 100%;}
+    .about img{
+        margin-bottom: 8px;
+        max-width: 90%;
+    }
+    
+    
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        column-gap: 2%;
+
+    }
+}
